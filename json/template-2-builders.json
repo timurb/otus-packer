@@ -38,8 +38,6 @@
         "most_recent": true
       },
       "ssh_username": "ubuntu",
-      "ssh_keypair_name": "TimurB-tmp",
-      "ssh_private_key_file": "~/.ssh/aws-timurb.pem",
       "type": "amazon-ebs"
     }
   ],
