@@ -31,13 +31,15 @@
       "source_ami_filter": {
         "filters": {
           "virtualization-type": "hvm",
-          "name": "ubuntu/images/*ubuntu-xenial-16.04-amd64-server-*",
+          "name": "ubuntu/images/*ubuntu-focal-20.04-amd64-server-*",
           "root-device-type": "ebs"
         },
         "owners": ["099720109477"],
         "most_recent": true
       },
       "ssh_username": "ubuntu",
+      "ssh_keypair_name": "TimurB-tmp",
+      "ssh_private_key_file": "~/.ssh/aws-timurb.pem",
       "type": "amazon-ebs"
     }
   ],
@@ -45,11 +47,7 @@
     {
       "type": "shell",
       "inline": [
-        "echo 'updating apt cache'",
-        "sudo apt update -y",
-        "sudo apt install -y nginx nano git",
-        "sudo systemctl enable nginx",
-        "curl localhost"
+        "echo 'Running the provisioning'"
       ]
     }
   ]
