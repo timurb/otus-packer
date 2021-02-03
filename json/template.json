@@ -2,7 +2,6 @@
   "variables": {
     "token": "{{env `YC_TOKEN`}}",
     "folder_id": "{{env `YC_FOLDER`}}",
-    "subnet_id": "{{env `YC_SUBNET`}}"
   },
   "builders": [
     {
