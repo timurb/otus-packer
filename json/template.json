@@ -1,7 +1,7 @@
 {
   "variables": {
     "token": "{{env `YC_TOKEN`}}",
-    "folder_id": "{{env `YC_FOLDER`}}",
+    "folder_id": "{{env `YC_FOLDER`}}"
   },
   "builders": [
     {
