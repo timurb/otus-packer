@@ -7,11 +7,16 @@
     {
       "type": "yandex",
       "token": "{{user `token`}}",
+
       "folder_id": "{{user `folder_id`}}",
+      "platform_id": "standard-v2",
+
       "image_name": "ubuntu-2004-lts-nginx-{{isotime | clean_resource_name}}",
       "image_family": "ubuntu-web-server",
       "image_description": "my custom ubuntu with nginx",
+
       "source_image_family": "ubuntu-2004-lts",
+
       "use_ipv4_nat": true,
       "disk_type": "network-ssd",
       "ssh_username": "ubuntu"
