@@ -3,6 +3,7 @@
     "token": "{{env `YC_TOKEN`}}",
     "folder_id": "{{env `YC_FOLDER`}}"
   },
+
   "builders": [
     {
       "type": "yandex",
@@ -22,6 +23,7 @@
       "ssh_username": "ubuntu"
     }
   ],
+
   "provisioners": [
     {
       "type": "shell",
@@ -34,4 +36,5 @@
       ]
     }
   ]
+
 }
